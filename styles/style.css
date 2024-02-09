@@ -1,0 +1,651 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+.pr-text-color {
+    color: rgba(19, 19, 24, 0.70);
+}
+
+header,
+main {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 00px;
+    flex-wrap: wrap;
+}
+
+#toggler,
+label {
+    display: none;
+}
+
+.clicked-color {
+    color: #FF5400;
+}
+
+nav .navbar>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.logo {
+    color: #FF5400;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner {
+    background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    border-radius: 16px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+    color: #fff;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-grad>h1 {
+    font-size: 4rem;
+    font-weight: 800;
+
+}
+
+.banner-grad>p {
+    width: 676px;
+    margin: auto;
+}
+form {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 10px 0px;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: auto;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 175px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.find-now {
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.find-now:hover {
+    background-color: #b37556;
+}
+
+#popular {
+    display: flex;
+    padding: 100px 0px;
+    color: rgba(19, 19, 24, 0.70);
+    justify-content: space-between;
+    line-height: 28px;
+}
+
+#popular .popular-tour-content>h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+#popular .popular-tour-content>p {
+    padding: 28px 0px;
+}
+
+#popular .popular-tour-content {
+    padding-right: 60px;
+}
+
+#popular .popular-tour-content>li {
+    padding: 10px 0px;
+}
+
+.pr-btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pr-btn:hover {
+    background-color: #b37556;
+}
+
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2em;
+}
+
+#destination {
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+#destination>h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#destination>p {
+    color: rgba(19, 19, 24, 0.70);
+    padding: 35px 250px;
+}
+
+.first-line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.second-line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.third-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-choose-us {
+    text-align: center;
+}
+
+.why-choose-us>h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 20px 0px;
+}
+
+.why-choose-us>p {
+    padding-bottom: 40px;
+    width: 643px;
+    margin: auto;
+}
+
+.carts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.carts img {
+    width: 64px;
+}
+
+.cart-1,
+.cart-2,
+.cart-3 {
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.cart-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.cart-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.cart-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.cart-3 {
+    grid-column: 1 / span 2;
+    margin: 0px 26%;
+}
+
+.deals-descrip {
+    text-align: center;
+    width: 640px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+.back-1-img,
+.back-3-img {
+    background-image: url('../Images/satarini.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+}
+
+.booking-cart-1,
+.booking-cart-3 {
+    width: 579px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 40px;
+    margin-left: 530px;
+    position: absolute;
+    top: 80px;
+}
+
+.deals h2 {
+    padding: 20px 0px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.icons {
+    display: flex;
+}
+
+.time,
+.people,
+.map {
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.fa-solid {
+    padding-right: 10px;
+    color: #FF5400;
+}
+
+.price {
+    color: #FF5400;
+    padding: 20px 0px;
+    font-weight: 800;
+}
+
+.back-2-img {
+    background-image: url('../Images/satarini-2.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    margin: 30px 0px;
+}
+
+.booking-cart-2 {
+    width: 579px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 40px;
+    margin-left: 70px;
+    position: absolute;
+    top: 80px;
+}
+
+.deals-btn {
+    margin: 20px 0px 20px 480px;
+}
+
+#perfect-place {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.perfect-place-content>h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.perfect-place-content {
+    width: 450px;
+}
+
+.perfect-place-content>p {
+    padding-bottom: 30px;
+}
+
+.perfect-place-content>li {
+    padding-bottom: 30px;
+}
+
+.perfect-place-video {
+    width: 600px;
+}
+
+#subscribe {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0px;
+
+}
+
+.news-letter {
+    margin-right: 20px;
+    padding: 30px 30px 0px 30px;
+    width: 470px;
+    border: 2px solid #FF5400;
+    border-radius: 16px;
+}
+
+.news-letter>h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+.news-letter hr {
+    border-color: rgba(19, 19, 24, 0.05);
+    margin: 10px 0px;
+}
+
+.news-letter-form>input {
+    margin-bottom: 20px;
+    display: block;
+    width: 400px;
+    font-size: 1.1 rem;
+    padding: 25px;
+    background-color: rgba(19, 19, 24, 0.05);
+    border: none;
+}
+
+.subscribe {
+    padding: 15px 150px;
+}
+
+footer {
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 50px 120px;
+    text-align: center;
+}
+
+footer>p {
+    width: 770px;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+
+.fa-brands {
+    padding: 18px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+footer hr {
+    border-color: rgba(19, 19, 24, 0.10);
+}
+
+.copy-right {
+    color: #131318;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* responsive for mobile  */
+@media only screen and (max-width: 600px) {
+
+    header,
+    main {
+        width: 100%;
+    }
+
+    .banner {
+        padding: 100px 20px;
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        width: 100%;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+    }
+
+    #toggler:checked~.navbar {
+        max-height: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .popular-tour-content {
+        padding-right: 20px;
+    }
+
+    #popular {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        padding: 50px 20px;
+    }
+
+    #popular .popular-tour-content {
+        padding-right: 0;
+    }
+
+    .desti-img img {
+        padding-bottom: 10px;
+    }
+
+    .first-line,
+    .second-line,
+    .third-line {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+
+    .perfect-place-video img {
+        width: 450px;
+        padding-top: 30px;
+        margin-left: 70px;
+    }
+
+    #destination>h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        width: 90%;
+    }
+
+    #destination {
+        padding-bottom: 10px;
+    }
+
+    #destination>p {
+        width: 70%;
+        margin: 10px 65px;
+        padding: 10px;
+    }
+
+    .carts {
+        display: block;
+        padding: 40px;
+    }
+
+    .cart-1,
+    .cart-2 {
+        margin-bottom: 30px;
+    }
+
+    .cart-3 {
+        margin: 0;
+    }
+
+    .why-choose-us>h1 {
+        font-size: 2.5rem;
+        padding: 0px;
+        width: 450px;
+        margin: 0px 50px;
+    }
+
+    .why-choose-us>p {
+        padding-bottom: 10px;
+        width: 450px;
+        margin: 0px 50px;
+    }
+
+    .deals-descrip {
+        padding-top: 0;
+        padding-bottom: 20px;
+        width: 450px;
+    }
+
+    .booking-cart-1,
+    .booking-cart-3,
+    .booking-cart-2 {
+        margin-left: 80px;
+        width: 450px;
+        padding: 20px;
+    }
+
+    .deals-btn {
+        margin: 20px 180px;
+    }
+
+    #subscribe {
+        display: flex;
+        margin: 40px 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .news-letter {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .save-money img {
+        width: 78%;
+        align-items: center;
+        margin: 0px 62px;
+    }
+
+    #perfect-place {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-letter {
+        margin-right: 0;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+
+    .find-now {
+        width: 250px;
+        margin: auto;
+    }
+
+    #popular {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    #popular .popular-tour-content {
+        padding-right: 30px;
+    }
+
+    .popular-tour-img>img {
+        width: 100%;
+    }
+
+    .popular-tour-img {
+        padding-top: 30px;
+        padding-right: 50px;
+    }
+
+    footer {
+        padding: 20px 20px;
+    }
+
+    footer>p {
+        width: 400px;
+        padding: 20px 0px;
+        margin: 0 auto;
+    }
+
+    .copy-right {
+        padding-bottom: 20px;
+    }
+}
